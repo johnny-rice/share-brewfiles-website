@@ -2,14 +2,14 @@ import type { DeveloperType } from "@/types/personality";
 import { PieChart } from "react-minimal-pie-chart";
 
 const CustomPieChart = ({ data }: { data: DeveloperType }) => {
-  const colors = [
-    "#2D24E9",
-    "#fff",
-    "#7EB1Fd",
-    "#F847F1",
-    "#0868F9",
-    "#00EAEA",
-  ];
+const colors = [
+	      "#8A2BE2", // Blue Violet
+	        "#9370DB", // Medium Purple
+		  "#BA55D3", // Medium Orchid
+		    "#DA70D6", // Orchid
+		      "#9932CC", // Dark Orchid
+		        "#6A0DAD"  // Purple
+    ];
 
   const pieData = Object.entries(data).map(([title, value], index) => ({
     title,
